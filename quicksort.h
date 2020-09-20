@@ -123,10 +123,10 @@ void Quicksort::Sort(std::vector<Producto> &v,int op,std::string param)
   opcion=op;
   parametro=param;
   Sort_helper(v,0,v.size()-1);
-  for(int i=0;i<v.size();i++)
+  /*for(int i=0;i<v.size();i++)
   {
     std::cout<<v[i].getNombre()<<std::endl;
-  }
+  }*/
 }
 
 #endif

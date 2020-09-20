@@ -12,7 +12,7 @@ void MostrarVector(std::vector<Producto> &v);
 int ElegirParametros(std::vector<Producto> &v);
 void Filtrar(std::vector<Producto> &v,std::string,std::string);
 std::string Mayus(std::string);
-//void ordenamiento(std::vector<Producto> &v,int);
+//void  acotarResultados(std::vector<Producto>&);
 void CrearDoc(std::vector<Producto> &v);
 
 //variables para determinar qué imprimir
@@ -33,13 +33,14 @@ int main()
   std::vector<Producto> vect_search(vect_prod);
   opcion_orden=ElegirParametros(vect_search);
   //Ordenar
-  MostrarVector(vect_search);
   Quicksort vect_orden;
   std::string parametro;
   if(bool_costo){parametro="COSTO";}
   if(bool_precio){parametro="PRECIO";}
   if(bool_descuento){parametro="DESCUENTO";}
   vect_orden.Sort(vect_search, opcion_orden,parametro);
+  //Rango
+
   //Resultados
   MostrarVector(vect_search);
   CrearDoc(vect_search);
@@ -151,7 +152,7 @@ void Filtrar(std::vector<Producto> &v,std::string input,std::string tipo)
         }
         else
         {
-          std::cout<<"Elemento encontrado ("<<i<<")..."<<std::endl;
+          std::cout<<"Elemento encontrado ("<<i+1<<")..."<<std::endl;
         }
       }
     }
@@ -168,7 +169,7 @@ void Filtrar(std::vector<Producto> &v,std::string input,std::string tipo)
         }
         else
         {
-          std::cout<<"Elemento encontrado ("<<i<<")..."<<std::endl;   
+          std::cout<<"Elemento encontrado ("<<i+1<<")..."<<std::endl;   
         }
       }
     }
@@ -185,7 +186,7 @@ void Filtrar(std::vector<Producto> &v,std::string input,std::string tipo)
         }
         else
         {
-          std::cout<<"Elemento encontrado ("<<i<<")..."<<std::endl;
+          std::cout<<"Elemento encontrado ("<<i+1<<")..."<<std::endl;
         }
       }
     }
