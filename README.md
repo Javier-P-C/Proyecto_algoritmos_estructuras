@@ -3,11 +3,11 @@
 
 -------------------------------------------------------------------
 DOCUMENTACIÓN:
-  1.-Explicación general del código
-  2.-Explicación por Función
-  3.-Complejidades de los algoritmos
-  4.-Input de usuarios
-  5.-Casos de Prueba
+1.-Explicación general del código
+2.-Explicación por Función
+3.-Complejidades de los algoritmos
+4.-Input de usuarios
+5.-Casos de Prueba
 
 -------------------------------------------------------------------
 
