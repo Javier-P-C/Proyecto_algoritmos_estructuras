@@ -1,6 +1,8 @@
 #ifndef QUICKSORT_H
 #define QUICKSORT_H
 
+#include <vector>
+
 #include "producto.h"
 
 class Quicksort
